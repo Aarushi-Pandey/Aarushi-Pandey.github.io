@@ -7,7 +7,7 @@ const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
     title: "Enterprise Technology Intern",
-    cardImage: "assets/images/experience-page/statefarm.png",
+    cardImage: "assets/images/experience-page/statefarm.jpeg",
     place: "State Farm",
     time: "(May - July, 2021)",
     desp: "<li>Worked alongside an agile team to support internal APIs for the Drive Safe and Save Program.</li> <li>Created product topology diagrams for APIs and performed analysis on customer order data. </li> <li>Aggregated API usage metrics across internal teams and displayed data in a central dashboard. </li> <li>Implemented changes to CI/CD pipeline to automate logging of integration testing results. </li> <li>Developed back-end database using JavaScript and Firebase of a web application that gamifies networking between employees during State Farm’s Hack Day event. </li>",
