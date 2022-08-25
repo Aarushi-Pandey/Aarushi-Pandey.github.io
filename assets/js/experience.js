@@ -6,7 +6,7 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Enterprise Technology Intern",
+    title: "Enterprise Technology Intern ",
     cardImage: "assets/images/experience-page/statefarm.jpeg",
     place: "State Farm",
     time: "(May - July, 2021)",
