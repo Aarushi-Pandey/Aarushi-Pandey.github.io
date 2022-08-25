@@ -6,12 +6,19 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Enterprise Technology Intern ",
+    title: "Enterprise Technology Intern",
     cardImage: "assets/images/experience-page/statefarm.jpeg",
     place: "State Farm",
     time: "(May - July, 2021)",
     desp: "<li>Worked alongside an agile team to support internal APIs for the Drive Safe and Save Program.</li> <li>Created product topology diagrams for APIs and performed analysis on customer order data. </li> <li>Aggregated API usage metrics across internal teams and displayed data in a central dashboard. </li> <li>Implemented changes to CI/CD pipeline to automate logging of integration testing results. </li> <li>Developed back-end database using JavaScript and Firebase of a web application that gamifies networking between employees during State Farm’s Hack Day event. </li>",
   },
+  {
+    title: "Software Engineer Intern",
+    cardImage: "assets/images/experience-page/jpmc.jpeg",
+    place: "JPMorgan Chase & Co.",
+    time: "(June - August, 2022)",
+    desp: "<li>Cooperated with another intern to create an internal chatbot using the Rasa framework to reduce the APM team's workload in answering common questions.</li> <li>Trained chatbot using NLP models to parse and respond to user input.</li><li>Automated Jira ticket creation and displayed user permissions using internal APIs.</li><li>Deployed the chatbot to internal cloud using Docker and Kubernetes.</li>",
+  }
 ];
 
 const showCards2 = () => {
