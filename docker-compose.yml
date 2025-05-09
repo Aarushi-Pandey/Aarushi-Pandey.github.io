@@ -2,11 +2,20 @@ version: '3'
 
 services:
   jekyll:
-    image: jekyll/jekyll:3.8
+    image: ruby:2.7-slim
     container_name: modern-resume-theme
-    command: jekyll serve --watch --force_polling --verbose
+    command: >
+      bash -c "apt-get update && 
+               apt-get install -y git build-essential && 
+               git config --global --add safe.directory /site && 
+               gem install bundler:2.1.4 && 
+               bundle install && 
+               bundle exec jekyll serve --host 0.0.0.0 --watch --force_polling --verbose"
     ports:
       - 4000:4000
       - 35729:35729
     volumes:
-      - ./:/srv/jekyll
+      - ./:/site
+    environment:
+      - JEKYLL_ENV=development
+      - BUNDLE_PATH=/usr/local/bundle
