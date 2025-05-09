@@ -2,7 +2,7 @@ version: '3'
 
 services:
   jekyll:
-    image: ruby:2.7-slim
+    image: ruby:3.2-slim
     container_name: modern-resume-theme
     command: >
       bash -c "apt-get update && 
@@ -19,3 +19,4 @@ services:
     environment:
       - JEKYLL_ENV=development
       - BUNDLE_PATH=/usr/local/bundle
+    working_dir: /site
