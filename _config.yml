@@ -1,5 +1,5 @@
 # Site
-repository: Aarushi-Pandey/modern-resume-theme
+repository: Aarushi-Pandey/Aarushi-Pandey.github.io
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
 # Content configuration version
@@ -23,7 +23,7 @@ darkmode: true
 additional_links:
   - title: Resume
     icon: fas fa-file-pdf
-    url: /assets/resume.pdf
+    url: https://aarushipandey.github.io/assets/resume.pdf
 github_username:  Aarushi-Pandey
 #stackoverflow_username: "00000001"
 #dribbble_username: jekyll
