@@ -75,39 +75,64 @@ content:
   #         Short overview of the project (optional)
   #       description: | # this will include new lines to allow paragraphs
   #         Description about the work on/with the project
+  - title: Technical Skills
+    layout: list
+    content:
+      - layout: left
+        title: Languages
+        description: | # this will include new lines to allow paragraphs
+          Python, Go, JavaScript, HTML, CSS, Java, C, C++
+      - layout: left
+        title: Technologies/ Frameworks
+        description: | # this will include new lines to allow paragraphs
+          AWS, Kubernetes, React, Next.js, PostgresSQL, Redis, Git, Agile/Scrum
+      - layout: left
+        title: Certifications
+        description: | # this will include new lines to allow paragraphs
+          AWS Solutions Architect, AWS Cloud Practitioner 
+      
+
   - title: Experience
     layout: list
     content:
-      - layout: right
+      - layout: left
         title: JPMorgan Chase and Co.
         sub_title:  Software Engineer
         caption: Aug 2023 - Present
         description: | # this will include new lines to allow paragraphs
-          Architected Airflow pipeline to automate fetching and processing of CNBC news, delivering crucial updates to the AWM CEO every 15 minutes.
-          
-          Created a Go API endpoint that provides GPT-4o-powered news summarization to internal advisors, reducing the data preparation time for external clients by 91%.
-          
-          Designed a new email digest template using HTML/CSS based on iterative customer input that led to a significant rise in positive feedback from business leadership.
-          
-          Contributed to engineering culture by organizing team events and mentoring 7 junior SEP engineers.
+          - Architected Airflow pipeline to automate fetching and processing of CNBC news, delivering crucial updates to the AWM CEO every 15 minutes.
+          - Created a Go API endpoint that provides GPT-4o-powered news summarization to internal advisors, reducing the data preparation time for external clients by 91%.
+          - Designed a new email digest template using HTML/CSS based on iterative customer input that led to a significant rise in positive feedback from business leadership.
+          - Contributed to engineering culture by organizing team events and mentoring 7 junior SEP engineers.
+      - layout: left
+        title: JPMorgan Chase and Co.
+        sub_title:  Software Engineer Intern
+        caption: June 2022 - Aug 2022
+        description: | # this will include new lines to allow paragraphs
+          - Built and deployed an internal Rasa chatbot using Docker/Kubernetes, reducing the APM team’s support workload by 50%.
+          - Integrated NLP, Jira automation, and internal APIs, reducing MTTR for IAM requests by 80%.
+      - layout: left
+        title: State Farm
+        sub_title:  Software Engineer Intern
+        caption: May 2021 - July 2021
+        description: | # this will include new lines to allow paragraphs
+          - Contributed to 5 internal APIs and CI/CD automation for the Drive Safe and Save Program, reducing build times by 25%.
+          - Built a JavaScript + Firebase backend for a prize-winning internal hackathon app, now being implemented company-wide.
 
   - title: Education
     layout: list
     content:
-      - layout: top-right
-        title: Institution name
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
-        quote: >
-          Short institution or course description (optional)
+      - layout: top-left
+        title: The University of Texas at Dallas
+        sub_title: Bachelor of Science in Computer Science
+        caption: Aug 2019 - May 2023
         description: | # this will include new lines to allow paragraphs
-          Description of qualification
+          I studied Computer Science at the University of Texas at Dallas. At UTD, I was involved in clubs like Society of Women Engineers (SWE), WEHack, and Korean Language Club (KLC). 
+
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
-
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+      Apart from coding, my hobbies include reading, listening to music, ice skating, and bullet journaling.
 
 # Footer
 footer_show_references: true
