@@ -52,7 +52,7 @@ linkedin_username: Aarushi-s-Pandey
 # about_title: About Me (Use this to override about section title)
 about_profile_image: /images/resume_pic.jpeg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, I'm Aarushi! Currently, I'm a full-stack Software Engineer at JPMC with an interest in machine learning. I studied Computer Science at the University of Texas at Dallas. At UTD, I was involved in clubs like Society of Women Engineers (SWE), WEHack, and Korean Language Club (KLC). Apart from coding, my hobbies include reading, listening to music, ice skating, and bullet journaling.
+  Hi, I'm Aarushi! Currently, I'm a full-stack **Software Engineer** at **JPMC** with an interest in machine learning. I studied Computer Science at the University of Texas at Dallas. At UTD, I was involved in clubs like Society of Women Engineers (SWE), WEHack, and Korean Language Club (KLC). Apart from coding, my hobbies include reading, listening to music, ice skating, and bullet journaling.
 
 content:
   # - title: Projects # Title for the section
