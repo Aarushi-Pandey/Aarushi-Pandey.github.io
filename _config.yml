@@ -20,6 +20,10 @@ darkmode: true
 
 # Social links
 #twitter_username: jekyllrb
+additional_links:
+  - title: Resume
+    icon: fas fa-file-pdf
+    url: /assets/resume.pdf
 github_username:  Aarushi-Pandey
 #stackoverflow_username: "00000001"
 #dribbble_username: jekyll
@@ -109,7 +113,7 @@ content:
         sub_title:  Software Engineer Intern
         caption: June 2022 - Aug 2022
         description: | # this will include new lines to allow paragraphs
-          - Built and deployed an internal Rasa chatbot using Docker/Kubernetes, reducing the APM team’s support workload by 50%.
+          - Built and deployed an internal Rasa chatbot using Docker/Kubernetes, reducing the APM team's support workload by 50%.
           - Integrated NLP, Jira automation, and internal APIs, reducing MTTR for IAM requests by 80%.
       - layout: left
         title: State Farm
