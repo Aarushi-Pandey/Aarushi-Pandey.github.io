@@ -56,7 +56,7 @@ linkedin_username: Aarushi-s-Pandey
 # about_title: About Me (Use this to override about section title)
 about_profile_image: /images/resume_pic.jpeg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, I'm Aarushi! Currently, I'm a full-stack **Software Engineer** at **JPMC** with an interest in machine learning. I studied Computer Science at the University of Texas at Dallas. At UTD, I was involved in clubs like Society of Women Engineers (SWE), WEHack, and Korean Language Club (KLC). Apart from coding, my hobbies include reading, listening to music, ice skating, and bullet journaling.
+  Hi, I'm Aarushi! Currently, I'm a full-stack **Software Engineer** at **JPMC** with an interest in machine learning. I studied Computer Science at the University of Texas at Dallas. At UTD, I was involved in clubs like Society of Women Engineers, WEHack, and Korean Language Club. 
 
 content:
   # - title: Projects # Title for the section
@@ -112,6 +112,7 @@ content:
         title: JPMorgan Chase and Co.
         sub_title:  Software Engineer Intern
         caption: June 2022 - Aug 2022
+        border: weak
         description: | # this will include new lines to allow paragraphs
           - Built and deployed an internal Rasa chatbot using Docker/Kubernetes, reducing the APM team's support workload by 50%.
           - Integrated NLP, Jira automation, and internal APIs, reducing MTTR for IAM requests by 80%.
@@ -131,12 +132,22 @@ content:
         sub_title: Bachelor of Science in Computer Science
         caption: Aug 2019 - May 2023
         description: | # this will include new lines to allow paragraphs
-          I studied Computer Science at the University of Texas at Dallas. At UTD, I was involved in clubs like Society of Women Engineers (SWE), WEHack, and Korean Language Club (KLC). 
+          Major: Computer Science
 
+          Organizations: 
+          - Society of Women Engineers (Webmaster)
+          - WEHack (Webmaster and Industry Coordinator)
+          - Korean Language Club (Vice President)
+          - Computer Security Group
+  
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      Apart from coding, my hobbies include reading, listening to music, ice skating, and bullet journaling.
+      Apart from coding, my hobbies include:
+      - reading
+      - listening to music
+      - ice skating
+      - bullet journaling
 
 # Footer
 footer_show_references: true
