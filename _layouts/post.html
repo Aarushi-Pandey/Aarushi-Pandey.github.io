@@ -1,10 +1,34 @@
----
-layout: blog
----
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body class="{% if site.darkmode == true and site.darkmode != 'never' %}dark{% endif %}">
+    {% include header.html %}
 
-<section class="section">
-  <div class="section__title">{{ page.title }}</div>
-  <div class="section__content section__content__text">
-    {{ content }}
-  </div>
-</section>
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+    
+          {%- if site.version == 2 -%}
+            <div class="container {{ section.layout }}-container">
+                <h3 id="{{ section.title | slugify }}"> {{ page.title }}</h3>
+                <b><p class="section__content__text">
+                    {{ page.description }}
+                </p></b>
+                <br><br>
+
+                <p class="section__content__text">
+                    {{ page.content }}
+                </p>
+
+            </div>
+          {% else %}
+            {%- include v1/default.html -%}
+          {%- endif -%}
+        </div>
+      </main>
+    
+      {%- include footer.html -%}
+      {% if site.darkmode == false %}
+        <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
+      {% endif %}
+  </body>
+</html>
