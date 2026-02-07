@@ -24,6 +24,9 @@ additional_links:
   - title: Resume
     icon: fas fa-file-pdf
     url: https://aarushi-pandey.github.io/Pandey_Aarushi.pdf
+  - title: Blog
+    icon: fas fa-blog
+    url: http://localhost:4000/blog/ #https://aarushi-pandey.github.io/blog
 github_username:  Aarushi-Pandey
 #stackoverflow_username: "00000001"
 #dribbble_username: jekyll
