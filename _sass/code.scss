@@ -1,0 +1,63 @@
+// Dark-themed code / syntax blocks (Rouge + GFM fenced blocks in blog posts)
+.page-content {
+  .highlighter-rouge {
+    margin: 1rem 0;
+  }
+
+  .highlight {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  pre.highlight,
+  pre {
+    background: #0d1117 !important;
+    color: #c9d1d9 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 6px;
+    padding: 1rem 1.25rem !important;
+    font-size: 0.9em;
+    line-height: 1.45;
+    overflow-x: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  // Inline backticks (must precede pre code so block rules win)
+  code.highlighter-rouge {
+    background: rgba(110, 118, 129, 0.35);
+    color: #e6edf3;
+    padding: 0.15em 0.45em;
+    border-radius: 4px;
+    font-size: 0.88em;
+    border: 1px solid rgba(240, 246, 252, 0.1);
+  }
+
+  pre code,
+  pre code.highlighter-rouge {
+    color: inherit !important;
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: inherit;
+    white-space: pre;
+  }
+
+  // Rouge token colors (GitHub-dark–style on dark background)
+  .highlight {
+    .c1, .cm, .c, .cp, .cs { color: #8b949e; }
+    .err { color: #f85149; background: transparent; }
+    .k, .kc, .kd, .kn, .kp, .kr, .kt { color: #ff7b72; }
+    .o, .ow { color: #ff7b72; }
+    .n, .na, .nb, .nc, .no, .nd, .ni, .ne, .nf, .nl, .nn, .nx, .py { color: #79c0ff; }
+    .nt { color: #7ee787; }
+    .nv, .vc, .vg, .vi { color: #79c0ff; }
+    .s, .s1, .s2, .sb, .sc, .sd, .se, .si, .ss { color: #a5d6ff; }
+    .m, .mf, .mh, .mi, .mo, .il { color: #79c0ff; }
+    .p { color: #c9d1d9; }
+    .bp { color: #79c0ff; }
+    .gd { color: #ffa657; }
+    .gi { color: #7ee787; }
+    .w { color: #484f58; }
+  }
+}
