@@ -8,17 +8,23 @@
         <div class="wrapper">
     
           {%- if site.version == 2 -%}
-            <div class="container {{ section.layout }}-container">
-                <h3 id="{{ section.title | slugify }}"> {{ page.title }}</h3>
-                <b><p class="section__content__text">
-                    {{ page.description }}
-                </p></b>
-                <br><br>
-
-                <p class="section__content__text">
-                    {{ page.content }}
-                </p>
-
+            <div class="container blog-post">
+              <article class="blog-post__article">
+                <header class="blog-post__header">
+                  <h1 class="blog-post__title">{{ page.title }}</h1>
+                  {%- if page.date -%}
+                    <p class="blog-post__meta">
+                      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+                    </p>
+                  {%- endif -%}
+                  {%- if page.description -%}
+                    <p class="blog-post__lead">{{ page.description }}</p>
+                  {%- endif -%}
+                </header>
+                <div class="blog-post__body section__content__text">
+                  {{ page.content }}
+                </div>
+              </article>
             </div>
           {% else %}
             {%- include v1/default.html -%}

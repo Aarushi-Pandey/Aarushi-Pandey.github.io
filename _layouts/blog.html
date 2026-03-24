@@ -8,19 +8,23 @@
         <div class="wrapper">
     
           {%- if site.version == 2 -%}
-            <div class="container {{ section.layout }}-container">
-                <h3 id="{{ section.title | slugify }}">Blog</h3>
-                
-                {% for post in site.posts %}
-                    <h2>
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                    </h2>
-                    <p class="section__content__text">
-                        {{ post.description }}
+            <div class="container blog-index">
+              <header class="blog-index__header">
+                <h1 class="blog-index__title">Blog</h1>
+              </header>
+              {% for post in site.posts %}
+                <article class="blog-index__item">
+                  <h2 class="blog-index__post-title">
+                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                  </h2>
+                  <p class="blog-index__excerpt section__content__text">{{ post.description }}</p>
+                  {% if post.date %}
+                    <p class="blog-index__meta">
+                      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
                     </p>
-                    <br><br>
-                {% endfor %}
-
+                  {% endif %}
+                </article>
+              {% endfor %}
             </div>
           {% else %}
             {%- include v1/default.html -%}
